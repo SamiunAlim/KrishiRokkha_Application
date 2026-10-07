@@ -10,6 +10,8 @@ import { firebaseService } from '../services/firebaseService';
 import { storageService } from '../services/storageService';
 import { BanglaStrings } from '../constants/banglaStrings';
 
+// exporting function SyncIndicator
+
 export function SyncIndicator() {
   const [isOnline, setIsOnline] = useState(true);
   const [pendingCount, setPendingCount] = useState(0);
@@ -74,6 +76,8 @@ export function SyncIndicator() {
     </View>
   );
 }
+
+// Adding styles in CSS codes
 
 const styles = StyleSheet.create({
   container: {
