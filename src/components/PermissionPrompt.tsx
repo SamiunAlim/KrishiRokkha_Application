@@ -1,5 +1,5 @@
 /**
- * PermissionPrompt component to guide low-literacy farmers through camera/location permissions in Bangla.
+ * PermissionPrompt component to guide low-literacy farmers through camera/location permissions in Bangla.Only added bangla for better understanding.
  */
 
 import React from 'react';
@@ -14,6 +14,8 @@ interface PermissionPromptProps {
   buttonText?: string;
   onRequestPermission: () => void;
 }
+
+/*exporting function PermissionPrompt*/
 
 export function PermissionPrompt({
   icon = 'camera-outline',
@@ -38,6 +40,8 @@ export function PermissionPrompt({
     </View>
   );
 }
+
+// CSS codes for styling
 
 const styles = StyleSheet.create({
   container: {
