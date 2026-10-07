@@ -13,6 +13,8 @@ interface StatusBadgeProps {
   size?: 'small' | 'medium' | 'large';
 }
 
+// exporting function StatusBadge
+
 export function StatusBadge({ isHealthy, severity = 'low', size = 'medium' }: StatusBadgeProps) {
   if (isHealthy) {
     return (
@@ -25,6 +27,7 @@ export function StatusBadge({ isHealthy, severity = 'low', size = 'medium' }: St
     );
   }
 
+  // Adding CSS codes for styles
   const getSeverityStyle = () => {
     switch (severity) {
       case 'high':
@@ -63,6 +66,8 @@ export function StatusBadge({ isHealthy, severity = 'low', size = 'medium' }: St
     </View>
   );
 }
+
+// Adding CSS codes for styling
 
 const styles = StyleSheet.create({
   badge: {
