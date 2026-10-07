@@ -10,10 +10,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { ttsService, TTSStatus } from '../services/ttsService';
 import { BanglaStrings } from '../constants/banglaStrings';
 
+/*interfacing function BanglaAudioPlayerProps*/
+
 interface BanglaAudioPlayerProps {
   textToRead: string;
   title?: string;
 }
+
+/*exporting function BanglaAudioPlayer*/
 
 export function BanglaAudioPlayer({ textToRead, title = BanglaStrings.listenAudio }: BanglaAudioPlayerProps) {
   const [status, setStatus] = useState<TTSStatus>('stopped');
@@ -30,7 +34,7 @@ export function BanglaAudioPlayer({ textToRead, title = BanglaStrings.listenAudi
     };
   }, []);
 
-  // Animate soundwave while playing
+  // Animate soundwave while playing showing that with the functions.
   useEffect(() => {
     if (status === 'playing') {
       Animated.loop(
@@ -51,6 +55,8 @@ export function BanglaAudioPlayer({ textToRead, title = BanglaStrings.listenAudi
       waveAnim.setValue(1);
     }
   }, [status, waveAnim]);
+
+  // use handleTogglePlay as const
 
   const handleTogglePlay = async () => {
     if (status === 'playing') {
@@ -107,7 +113,7 @@ export function BanglaAudioPlayer({ textToRead, title = BanglaStrings.listenAudi
     </View>
   );
 }
-
+// CSS codes for styling
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#F1F8F1',
