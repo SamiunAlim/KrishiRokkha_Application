@@ -1,23 +1,38 @@
 {
   "expo": {
-    "name": "CropDiseaseApp",
+    "name": "কৃষি রক্ষা (CropDiseaseApp)",
     "slug": "CropDiseaseApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "cropdiseaseapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "ফসলের পাতার ছবি তুলে রোগ শনাক্ত করতে ক্যামেরার অনুমতি দিন।",
+        "NSPhotoLibraryUsageDescription": "গ্যালারি থেকে ফসলের ছবি নির্বাচন করতে অনুমতি দিন।",
+        "NSLocationWhenInUseUsageDescription": "আপনার এলাকার ফসলের রোগ মনিটর করতে লোকেশন ব্যবহারের অনুমতি দিন।"
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#2E7D32",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.CropDiseaseApp"
     },
     "web": {
       "output": "static",
@@ -28,11 +43,30 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#2E7D32",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "ফসলের পাতার ছবি তুলে রোগ শনাক্ত করতে ক্যামেরার অনুমতি দিন।"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "গ্যালারি থেকে ফসলের ছবি নির্বাচন করতে অনুমতি দিন।"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "আপনার এলাকার ফসলের রোগ মনিটর করতে লোকেশন ব্যবহারের অনুমতি দিন।"
+        }
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -1,0 +1,26 @@
+{
+  "classes": [
+    { "index": 0, "id": "rice_blast", "crop_bn": "ধান", "crop_en": "Rice", "disease_bn": "ধানের ব্লাস্ট রোগ", "disease_en": "Rice Blast", "is_healthy": false },
+    { "index": 1, "id": "rice_bacterial_blight", "crop_bn": "ধান", "crop_en": "Rice", "disease_bn": "ধানের পাতাপোড়া / ব্যাকটেরিয়াল ব্লাইট", "disease_en": "Bacterial Leaf Blight", "is_healthy": false },
+    { "index": 2, "id": "rice_healthy", "crop_bn": "ধান", "crop_en": "Rice", "disease_bn": "সুস্থ ধান গাছ", "disease_en": "Healthy Rice", "is_healthy": true },
+    { "index": 3, "id": "tomato_late_blight", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "টমেটোর নাবি ধসা (লেফট ব্লাইট)", "disease_en": "Tomato Late Blight", "is_healthy": false },
+    { "index": 4, "id": "tomato_early_blight", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "টমেটোর আগাম ধসা (আর্লি ব্লাইট)", "disease_en": "Tomato Early Blight", "is_healthy": false },
+    { "index": 5, "id": "tomato_leaf_mold", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "টমেটোর পাতার ছত্রাক (লিফ মোল্ড)", "disease_en": "Tomato Leaf Mold", "is_healthy": false },
+    { "index": 6, "id": "tomato_septoria_leaf_spot", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "টমেটোর সেপটোরিয়া পাতার দাগ", "disease_en": "Tomato Septoria Leaf Spot", "is_healthy": false },
+    { "index": 7, "id": "tomato_spider_mites", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "টমেটোর লাল মাকড় / স্পাইডার মাইট", "disease_en": "Tomato Two-spotted Spider Mite", "is_healthy": false },
+    { "index": 8, "id": "tomato_yellow_leaf_curl_virus", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "টমেটোর পাতা কোঁকড়ানো রোগ (টিওয়াইএলসিভি)", "disease_en": "Tomato Yellow Leaf Curl Virus", "is_healthy": false },
+    { "index": 9, "id": "tomato_healthy", "crop_bn": "টমেটো", "crop_en": "Tomato", "disease_bn": "সুস্থ টমেটো গাছ", "disease_en": "Healthy Tomato", "is_healthy": true },
+    { "index": 10, "id": "potato_late_blight", "crop_bn": "আলু", "crop_en": "Potato", "disease_bn": "আলুর নাবি ধসা (লেট ব্লাইট)", "disease_en": "Potato Late Blight", "is_healthy": false },
+    { "index": 11, "id": "potato_early_blight", "crop_bn": "আলু", "crop_en": "Potato", "disease_bn": "আলুর আগাম ধসা (আর্লি ব্লাইট)", "disease_en": "Potato Early Blight", "is_healthy": false },
+    { "index": 12, "id": "potato_healthy", "crop_bn": "আলু", "crop_en": "Potato", "disease_bn": "সুস্থ আলু গাছ", "disease_en": "Healthy Potato", "is_healthy": true },
+    { "index": 13, "id": "pepper_bacterial_spot", "crop_bn": "মরিচ", "crop_en": "Pepper / Chili", "disease_bn": "মরিচের ব্যাকটেরিয়াল পাতার দাগ", "disease_en": "Pepper Bacterial Spot", "is_healthy": false },
+    { "index": 14, "id": "pepper_healthy", "crop_bn": "মরিচ", "crop_en": "Pepper / Chili", "disease_bn": "সুস্থ মরিচ গাছ", "disease_en": "Healthy Pepper", "is_healthy": true },
+    { "index": 15, "id": "corn_common_rust", "crop_bn": "ভুট্টা", "crop_en": "Corn / Maize", "disease_bn": "ভুট্টার মরিচা রোগ (কমন রাস্ট)", "disease_en": "Corn Common Rust", "is_healthy": false },
+    { "index": 16, "id": "corn_leaf_blight", "crop_bn": "ভুট্টা", "crop_en": "Corn / Maize", "disease_bn": "ভুট্টার পাতার দাগ / নর্দার্ন লিফ ব্লাইট", "disease_en": "Corn Northern Leaf Blight", "is_healthy": false },
+    { "index": 17, "id": "corn_healthy", "crop_bn": "ভুট্টা", "crop_en": "Corn / Maize", "disease_bn": "সুস্থ ভুট্টা গাছ", "disease_en": "Healthy Corn", "is_healthy": true },
+    { "index": 18, "id": "apple_scab", "crop_bn": "আপেল", "crop_en": "Apple", "disease_bn": "আপেলের স্ক্যাব রোগ", "disease_en": "Apple Scab", "is_healthy": false },
+    { "index": 19, "id": "apple_healthy", "crop_bn": "আপেল", "crop_en": "Apple", "disease_bn": "সুস্থ আপেল গাছ", "disease_en": "Healthy Apple", "is_healthy": true },
+    { "index": 20, "id": "grape_black_rot", "crop_bn": "আঙ্গুর", "crop_en": "Grape", "disease_bn": "আঙ্গুরের কালো পচন (ব্ল্যাক রট)", "disease_en": "Grape Black Rot", "is_healthy": false },
+    { "index": 21, "id": "grape_healthy", "crop_bn": "আঙ্গুর", "crop_en": "Grape", "disease_bn": "সুস্থ আঙ্গুর গাছ", "disease_en": "Healthy Grape", "is_healthy": true }
+  ]
+}
