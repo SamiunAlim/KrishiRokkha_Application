@@ -1,5 +1,5 @@
 /**
- * ErrorBoundary component to prevent app crashes and display user-friendly Bangla error state.
+ * ErrorBoundary component to prevent app crashes and display visually user-friendly Bangla error state.
  */
 
 import React, { Component, ErrorInfo, ReactNode } from 'react';
@@ -15,6 +15,7 @@ interface State {
   hasError: boolean;
   error?: Error;
 }
+// exporting ErrorBoundary
 
 export class ErrorBoundary extends Component<Props, State> {
   public state: State = {
@@ -32,6 +33,8 @@ export class ErrorBoundary extends Component<Props, State> {
   private handleReset = () => {
     this.setState({ hasError: false, error: undefined });
   };
+
+  // Selecting render function as public
 
   public render() {
     if (this.state.hasError) {
@@ -55,6 +58,8 @@ export class ErrorBoundary extends Component<Props, State> {
     return this.props.children;
   }
 }
+
+// CSS Codes for styling
 
 const styles = StyleSheet.create({
   container: {
